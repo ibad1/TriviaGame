@@ -2,8 +2,99 @@
 <html>
 <head>
 	<title>Trivia Game</title>
+		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+     crossorigin="anonymous"></script>
+
 </head>
 <body>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-sm-12" id="heading">
+					<h1>TRIVIA GAME!</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6" id="start">
+					<button id="startbtn">START!</button>
+				</div>
+				<div class="col-sm-6" id="end">
+					<h2>Correct:<span id="correct"></span></h2>
+					<h2>Wrong:<span id="wrong"></span></h2>
+				</div>
+				<div class="col-sm-6" id="main">
+					<h2>Time Remaining: <span id="time">30</span></h2>
+					<form>
+						<fieldset>
+							<legend>First President of USA?</legend>
+								<input type="radio" name="answer1" id="1">
+									<label for="abe">Abraham Lincoln</label>
+								<input type="radio" name="answer1" id="2">
+									<label for="george">George Washington</label>
+								<input type="radio" name="answer1" id="3">
+									<label for="barack">Barack Obama</label>
+								<input type="radio" name="answer1" id="4">
+									<label for="donald">Donald Trump</label>
+						</fieldset>
+					</form>
 
+					<form>
+						<fieldset>
+							<legend>What is the name of the President's House?</legend>
+								<input type="radio" name="answer2" id="5">
+									<label for="ans1">President's House</label>
+								<input type="radio" name="answer2" id="6">
+									<label for="ans2">The House</label>
+								<input type="radio" name="answer2" id="7">
+									<label for="ans3">White House</label>
+								<input type="radio" name="answer2" id="8">
+									<label for="ans4">Blue House</label>
+						</fieldset>
+					</form>
+
+					<form>
+						<fieldset>
+							<legend>Where is the President's House?</legend>
+								<input type="radio" name="answer3" id="9">
+									<label for="ny">New York</label>
+								<input type="radio" name="answer3" id="10">
+									<label for="cali">California</label>
+								<input type="radio" name="answer3" id="11">
+									<label for="nj">New Jersey</label>
+								<input type="radio" name="answer3" id="12">
+									<label for="dc">Washington DC</label>
+						</fieldset>
+					</form>
+
+					<form>
+						<fieldset>
+							<legend>Who is the current USA President?</legend>
+								<input type="radio" name="answer1" id="13">
+									<label for="abe">Abraham Lincoln</label>
+								<input type="radio" name="answer1" id="14">
+									<label for="george">George Washington</label>
+								<input type="radio" name="answer1" id="15">
+									<label for="barack">Barack Obama</label>
+								<input type="radio" name="answer1" id="16">
+									<label for="donald">Donald Trump</label>
+						</fieldset>
+					</form>
+
+				
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<script type="text/javascript" language="javascript" src="assets/javascript/app.js"> </script>
 </body>
 </html>
