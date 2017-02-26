@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
-var time=10;
+var time=30;
 var correctans = 0;
 var wrongans = 0;
+var notanswer = 0;
 $("#main").hide();
 $("#end").hide();
 
@@ -21,6 +22,7 @@ function count (){
 			check();
 			$("#correct").html (correctans);
 			$("#wrong").html (wrongans);
+			$("#unanswered").html(notanswer);
 		}
 		else{
 			time--;
@@ -66,11 +68,15 @@ function check (){
 	}
 }
 
-})
+		if ($("input").not(":checked")){
+
+		notanswer++;
+	}
+});
 
 
 
 
 
 
-})
+});
